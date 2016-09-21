@@ -1,0 +1,21 @@
+{
+    "name": "swilson1337/jquery-pjax-queued",
+    "description": "Puts Pjax requests into a queue to allow multiple on one page",
+    "keywords": ["yii2", "jquery", "pjax", "queue"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+        "source": "https://github.com/swilson1337/jquery-pjax-queued",
+        "issues": "https://github.com/swilson1337/jquery-pjax-queued"
+    },
+    "authors": [
+        {
+            "name": "Shawn Wilson",
+            "homepage": "https://github.com/swilson1337"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-pjax": "*"
+    }
+}
