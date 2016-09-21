@@ -1012,7 +1012,7 @@
 			$.pjax.defaults = {
 				history: true,
 				cache: true,
-				timeout: 650,
+				timeout: 5000,
 				push: true,
 				replace: false,
 				type: 'GET',
