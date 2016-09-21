@@ -8,10 +8,9 @@ Requires that you edit your web config and add the 'assetManager' component simi
 					],
 				],
 				'yii\widgets\PjaxAsset' => [
-					'basePath' => '@webroot',
-					'baseUrl' => '@web',
+					'sourcePath' => '@vendor/swilson1337/jquery-pjax-queued',
 					'js' => [
-						'js/jquery.pjax.js',
+						'jquery.pjax.js',
 					],
 					'jsOptions' => [
 						'position' => \yii\web\View::POS_HEAD,
