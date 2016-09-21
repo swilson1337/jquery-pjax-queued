@@ -16,6 +16,6 @@
     ],
     "require": {
         "yiisoft/yii2": "*",
-        "yiisoft/yii2-pjax": "*"
+        "yiisoft/jquery-pjax": "*"
     }
 }
