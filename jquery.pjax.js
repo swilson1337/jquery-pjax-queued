@@ -173,6 +173,10 @@
 	var queue = [];
 
 	function pjax(options) {
+		if (typeof options.container == 'object' && options.container[0] != null) {
+			options.container = $(options.container[0]);
+		}
+		
 		queue.push({
 			options: options,
 			started: false
