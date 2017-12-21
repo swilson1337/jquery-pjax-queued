@@ -313,7 +313,7 @@ function realPjax(options) {
       timeout: options.timeout
     }
 
-    if (options.push || options.replace) {
+    if (options.history && (options.push || options.replace)) {
       window.history.replaceState(pjax.state, container.title, container.url)
     }
 
@@ -869,14 +869,20 @@ function enable() {
   $.pjax.submit = handleSubmit
   $.pjax.reload = pjaxReload
   $.pjax.defaults = {
-    timeout: 650,
+	history: true,
+	cache: true
+    timeout: 5000,
     push: true,
     replace: false,
     type: 'GET',
     dataType: 'html',
     scrollTo: 0,
     maxCacheLength: 20,
-    version: findVersion
+    version: findVersion,
+	pushRedirect: false,
+	replaceRedirect: true,
+	skipOuterContaienrs: false,
+	ieRedirectCompatibility: true
   }
   $(window).on('popstate.pjax', onPjaxPopstate)
 }
