@@ -260,6 +260,8 @@ function realPjax(options) {
     fire('pjax:complete', [xhr, textStatus, options])
 
     fire('pjax:end', [xhr, options])
+	
+	queue.shift()
   }
 
   options.error = function(xhr, textStatus, errorThrown) {
