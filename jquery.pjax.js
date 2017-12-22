@@ -210,7 +210,7 @@ setInterval(processPjaxQueue, 10)
 //   console.log( xhr.readyState )
 //
 // Returns whatever $.ajax returns.
-function pjax(options) {
+function realPjax(options) {
   options = $.extend(true, {}, $.ajaxSettings, pjax.defaults, options)
 
   if ($.isFunction(options.url)) {
